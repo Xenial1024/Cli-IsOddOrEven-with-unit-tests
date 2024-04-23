@@ -20,9 +20,9 @@ namespace Parzysta
                 }
                 if (_number % 1 != 0)
                     Console.WriteLine("Wpisana liczba nie jest ani parzysta ani nieparzysta.");
-                if (_number % 2 == 0)
+                else if (_number % 2 == 0)
                     Console.WriteLine("Wpisana liczba jest parzysta");
-                if (_number % 2 == 1)
+                else if (_number % 2 == 1)
                     Console.WriteLine("Wpisana liczba jest nieparzysta");
             }
         }
