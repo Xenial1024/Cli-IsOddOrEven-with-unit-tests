@@ -4,6 +4,10 @@ namespace IsOddOrEven
 {
     class Program : Number
     {
-        static void Main() => Console.WriteLine("Wpisana liczba + Number.IsEvenOrOdd()");
+        static void Main()
+        {
+            string result = Number.IsEvenOrOdd();
+            Console.WriteLine("Wpisana liczba " + result);
+        }
     }
 }
