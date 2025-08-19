@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Parzysta
+namespace IsOddOrEven
 {
-    class Number
+    public class Number
     {
-        protected internal static float _number;
-        protected internal static string _input;
-        protected internal static void IsEvenOrOdd()
+        private protected static float _number;
+        private protected static string _input;
+        public static string IsEvenOrOdd()
         {
             while (true)
             {
@@ -19,11 +19,11 @@ namespace Parzysta
                     continue;
                 }
                 if (_number % 1 != 0)
-                    Console.WriteLine("Wpisana liczba nie jest ani parzysta ani nieparzysta.");
+                    return "nie jest ani parzysta ani nieparzysta";
                 else if (_number % 2 == 0)
-                    Console.WriteLine("Wpisana liczba jest parzysta");
+                    return "jest parzysta";
                 else if (_number % 2 == 1)
-                    Console.WriteLine("Wpisana liczba jest nieparzysta");
+                    return "jest nieparzysta";
             }
         }
     }

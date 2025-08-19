@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsOddOrEven", "Parzysta\IsOddOrEven.csproj", "{0F452A71-D14E-41CC-BF41-8367824BA4D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsOddOrEven.UnitTests", "IsOddOrEven.UnitTests\IsOddOrEven.UnitTests.csproj", "{DE6EEFF1-1091-4B61-87D8-EA0D4CBCD8C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0F452A71-D14E-41CC-BF41-8367824BA4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F452A71-D14E-41CC-BF41-8367824BA4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F452A71-D14E-41CC-BF41-8367824BA4D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6EEFF1-1091-4B61-87D8-EA0D4CBCD8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6EEFF1-1091-4B61-87D8-EA0D4CBCD8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6EEFF1-1091-4B61-87D8-EA0D4CBCD8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6EEFF1-1091-4B61-87D8-EA0D4CBCD8C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,12 +1,9 @@
 ﻿using System;
 
-namespace Parzysta
+namespace IsOddOrEven
 {
     class Program : Number
     {
-        static void Main()
-        {
-            Number.IsEvenOrOdd();
-        }
+        static void Main() => Console.WriteLine("Wpisana liczba + Number.IsEvenOrOdd()");
     }
 }
