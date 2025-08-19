@@ -51,5 +51,35 @@ namespace IsOddOrEven.UnitTests
             // Assert
             Assert.That(result, Is.EqualTo("nie jest ani parzysta ani nieparzysta"));
         }
+
+        [Test]
+        [Timeout(3000)] 
+        public void IsEvenOrOdd_WhenInputIsNotANumber_ShouldWriteErrorMessage()
+        {
+            // Arrange
+            StringWriter output = new StringWriter();
+            TextWriter originalOut = Console.Out;
+            TextReader originalIn = Console.In;
+
+            Console.SetIn(new StringReader("x"));
+            Console.SetOut(output);
+
+            try
+            {
+                // Act
+                Number.IsEvenOrOdd();
+            }
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                Console.SetOut(originalOut);
+                Console.SetIn(originalIn);
+            }
+
+            // Assert
+            Assert.That(output.ToString(), Does.Contain("Wpisano błędną wartość lub nie wpisano jej wcale."));
+        }
     }
 }
